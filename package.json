@@ -9,6 +9,7 @@
     "lib"
   ],
   "scripts": {
+    "postversion": "git push && git push --tags",
     "start": "webpack-dev-server --watch",
     "lint": "eslint src && eslint __tests__ && eslint demo/src",
     "clean": "rimraf lib/core.js && rimraf lib/index.js",
